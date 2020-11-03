@@ -35,6 +35,8 @@ replaceAllButton.addEventListener("click", function () {
       if (cellBox.includes(findText)) {
         console.log(cellBox);
         cellBox = cellBox.replace(findText, replaceText);
+        cellElements[j].innerHTML = cellBox;
+        console.log(replaceText);
         console.log(cellBox.replace);
       }
     }
